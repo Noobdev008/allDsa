@@ -1,6 +1,14 @@
 function runProgram(input){
     input = input.trim().split("\n");
-
+    var [Current,Sachin]  =input[0].trim().split(" ").map(Number);
+    // console.log(Current,Sachin);
+    if(Current<Sachin){
+        console.log("Broken");
+    }else if(Current>Sachin){
+        console.log("Not Yet");
+    }else{
+        console.log("Wao");
+    }
   }
     
     if (process.env.USERNAME === "ACER") {
